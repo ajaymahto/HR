@@ -1,0 +1,5 @@
+#! /usr/bin/env python
+# To change string delimiter
+
+str1 = raw_input().strip()
+print "-".join(str1.split())

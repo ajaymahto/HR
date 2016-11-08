@@ -1,0 +1,6 @@
+#! /usr/bin/env python
+# To print hash of a tuple.
+
+t = int(raw_input().strip())
+t = tuple(map(int, raw_input().strip().split()))
+print hash(t)

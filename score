@@ -1,0 +1,16 @@
+#! /usr/bin/env python
+# To print student names with 2nd lowest scores.
+from operator import itemgetter
+t = int(raw_input().strip())
+scores, only_scores = {}, []
+while t > 0:
+ name = raw_input().strip()
+ score = float(raw_input().strip())
+ only_scores.append(score)
+ scores[name] = score
+ t -= 1
+ 
+only_scores = sorted(list(set(only_scores)))
+second_last = sorted([name for name in scores if scores[name] == only_scores[1]])
+for name in second_last:
+ print name 

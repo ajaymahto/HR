@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+# To replace character in a string
+
+str1 = raw_input().strip()
+p, c = raw_input().strip().split()
+p = int(p)
+print str1[:p] + c + str1[p+1:]

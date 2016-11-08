@@ -1,0 +1,5 @@
+#! /usr/bin/env python
+# To print string after swapping case.
+
+str1 = raw_input().strip()
+print str1.swapcase()

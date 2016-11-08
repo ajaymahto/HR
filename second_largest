@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+# To print hash of a tuple.
+
+N = int(raw_input().strip())
+l1 = list(set(map(int, raw_input().strip().split())))
+l1.sort()
+print l1[-2]

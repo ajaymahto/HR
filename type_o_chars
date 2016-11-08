@@ -1,0 +1,27 @@
+#! /usr/bin/env python
+# To check presence of alphanumeric, alphabets, digits in a string.
+
+str1 = raw_input().strip()
+alnum = False
+alpha = False
+digit = False
+lower = False
+upper = False
+for ch in str1:
+ if (ch >= 'a' and ch <= 'z'):
+  alnum = True
+  lower = True
+  alpha = True
+ if (ch >= '0' and ch <= '9'):
+  alnum = True
+  digit = True
+ if (ch >= 'A' and ch <= 'Z'):
+  alnum = True
+  upper = True
+  alpha = True
+
+print alnum
+print alpha
+print digit
+print lower
+print upper

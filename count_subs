@@ -1,0 +1,11 @@
+#! /usr/bin/env python
+# To print count of a substring.
+
+str1 = raw_input().strip()
+substr1 = raw_input().strip()
+count = 0
+for i in range(0, len(str1)):
+ substr2 = str1[i:i+len(substr1)]
+ if substr2 == substr1:
+  count += 1
+print count 
