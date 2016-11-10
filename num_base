@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+# convert decimal to octal, hex, binary
+
+def toBase(num, base):
+ super_string = "0123456789ABCDEF"
+ if num < base:
+  return super_string[num]
+ return toBase(num/base, base) + super_string[(num%base)]
+
+N = int(raw_input().strip())
+b_width = len(str(toBase(N,2)))
+for i in range(1, N+1):
+ print str(i).rjust(b_width), toBase(i, 8).rjust(b_width), \
+       toBase(i, 16).rjust(b_width), toBase(i, 2).rjust(b_width)

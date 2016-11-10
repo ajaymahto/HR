@@ -1,0 +1,9 @@
+#! /usr/bin/env python
+
+alpha = "0abcdefghijklmnopqrstuvwxyz"
+
+N = int(raw_input().strip())
+
+width = 4 * (N - 1) + 1
+output = []
+
